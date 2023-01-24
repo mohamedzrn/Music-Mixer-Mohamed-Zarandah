@@ -1,0 +1,75 @@
+div.gallery {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  color: red;
+  height: auto;
+  transition: linear 1s;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+div.gallery:after {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  color: red;
+  height: auto;
+  transition: linear 1s;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+div.gallery:hover {
+  color: grey;
+  transition: 1ms;
+  width: auto;
+}
+
+div.desc {
+  padding: auto;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+svg:hover {
+  fill: red;
+}
+
+body {
+  height: 100px;
+  margin: 0;
+  place-items: center center;
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+} 
